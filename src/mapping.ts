@@ -59,7 +59,7 @@ export function handleTransfer(event: TransferEvent): void {
       token.run = run.value;
     }
 
-    let rarity = instance.try_rarity(event.params.tokenId);
+    let rarity = instance.try_getRarityOf(event.params.tokenId);
     if (!rarity.reverted) {
       token.rarity = rarity.value;
     }
