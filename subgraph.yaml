@@ -6,7 +6,7 @@ dataSources:
     name: Ch
     network: mumbai
     source:
-      address: '0x05b93425E4b44c9042Ed97b7A332aB1575EbD25d'
+      address: '0x6e606c082dEcb1BA4710085a7E2c968f58B484e0'
       abi: CoinLeagueChampions
       startBlock: 20400547
     mapping:
