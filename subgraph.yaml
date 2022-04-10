@@ -3,12 +3,12 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: Ch
-    network: matic
+    name: Champions
+    network: mumbai
     source:
-      address: '0xf2a669a2749073e55c56e27c2f4edadb7bd8d95d'
+      address: "0x05b93425E4b44c9042Ed97b7A332aB1575EbD25d"
       abi: CoinLeagueChampions
-      startBlock: 20400547
+      startBlock: 20457416
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5

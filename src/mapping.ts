@@ -2,7 +2,7 @@ import { log, BigInt } from "@graphprotocol/graph-ts";
 import {
   CoinLeagueChampions,
   Transfer as TransferEvent,
-} from "../generated/CH/CoinLeagueChampions";
+} from "../generated/Champions/CoinLeagueChampions";
 import { Token, Owner, Contract, Transfer } from "../generated/schema";
 
 export function handleTransfer(event: TransferEvent): void {
@@ -87,7 +87,7 @@ export function handleTransfer(event: TransferEvent): void {
   // empty address is minting
   if (
     event.params.from.toHexString() ===
-      "0x0000000000000000000000000000000000000000" &&
+    "0x0000000000000000000000000000000000000000" &&
     contract.totalSupply
   ) {
     contract.totalSupply = contract.totalSupply.plus(BigInt.fromI32(1));

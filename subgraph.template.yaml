@@ -3,12 +3,12 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: Ch
-    network: {{network}}
+    name: Champions
+    network: {{ network }}
     source:
-      address: '{{address}}'
+      address: "{{address}}"
       abi: CoinLeagueChampions
-      startBlock: 20400547
+      startBlock: {{ startBlock }}
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
